@@ -16,7 +16,8 @@ const cekHariKerja = (day) => {
                         "sabtu",
                         "minggu",
                     ];
-                    result.push(dataDay[getToday]);
+                    result.push(dataDay[getToday - 1]);
+                    console.log(result);
 
                     if (getToday <= dataDay.length - 2) {
                         resolve(
