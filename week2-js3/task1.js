@@ -19,7 +19,7 @@ const cekHariKerja = (day) => {
                     result.push(dataDay[getToday - 1]);
                     console.log(result);
 
-                    if (getToday <= dataDay.length - 2) {
+                    if (getToday + 1 <= dataDay.length - 2) {
                         resolve(
                             `hari ini masuk kerja, karna hari ini hari ${result}`
                         );
@@ -41,4 +41,4 @@ const cekHariKerja = (day) => {
     // catch ini untuk menangkap throw message yang dilempar tadi dan menampilkan output error
 };
 
-console.log(cekHariKerja(new Date()));
+cekHariKerja(new Date());

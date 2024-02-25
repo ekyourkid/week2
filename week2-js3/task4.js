@@ -1,4 +1,4 @@
-fetch("https://jsonplaceholder.typicode.com/users1")
+fetch("https://jsonplaceholder.typicode.com/users")
     .then((Response) => Response.json())
     .then((data) => {
         data.forEach((user) => {

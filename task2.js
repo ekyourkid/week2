@@ -15,7 +15,7 @@ function callbackFilter (keyword,count)
 {
     const result = []
     for (let index = 0; index < NAMES.length; index++) {
-        const name = NAMES[index]?.toLowerCase()
+        const name = NAMES[index]
 
         if ( name.includes( keyword.toLowerCase() ) ) {
              result.push(name)
@@ -27,4 +27,4 @@ function callbackFilter (keyword,count)
     }
 }
 
-console.log(searchName( "an", 3, callbackFilter))
+console.log( searchName( "o", 3, callbackFilter ) )
